@@ -1,7 +1,7 @@
 'use strict'
 
 const Ajv = require('ajv')
-const ajv = new Ajv({ removeAdditional: true, useDefaults: true, coerceTypes: true })
+const ajv = new Ajv({ removeAdditional: true, useDefaults: true, coerceTypes: true, jsonPointers: true })
 
 ajv.addKeyword('separator', {
   type: 'string',
